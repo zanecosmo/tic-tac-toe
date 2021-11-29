@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gainsboro;
+}
+
+.title {
+    display: block;
+    position:absolute;
+    top:-15%;
+    left: 12%;
+    width: 77%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 8vmin;
+    font-weight: bold;
+    color: rgb(70,70,70);
+}
+
+.board {
+    position:absolute;
+    height:70vmin;
+    width:70vmin;
+    top: 50%;
+    left: 50%;
+    margin: -35vmin 0 0 -35vmin;
+}
+
+#box1 {
+    position:absolute;
+    height:33.3333%;
+    width:33.3333%;
+    border-radius: 12vmin 0 0 0;
+    background-color: white;
+}
+
+#box2 {
+    position:absolute;
+    left:33.3333%;
+    height:33.3333%;
+    width:33.3333%;
+    border-left: 1px solid rgb(144, 144, 144);
+    border-right: 1px solid rgb(144, 144, 144);
+    background-color: white;
+    
+}
+
+#box3 {
+    position:absolute;
+    right:0%;
+    height:33.3333%;
+    width:33.3333%;
+    border-radius: 0 12vmin 0 0;
+    background-color: white;
+}
+
+#box4 {
+    position:absolute;
+    top:33.3333%;
+    height:33.3333%;
+    width:33.3333%;
+    border-top: 1px solid rgb(144, 144, 144);
+    border-bottom: 1px solid rgb(144, 144, 144);
+    background-color: white;
+}
+
+#box5 {
+    position:absolute;
+    left:33.3333%;
+    top:33.3333%;
+    height:33.3333%;
+    width:33.3333%;
+    border: 1px solid rgb(144, 144, 144);
+    background-color: white;
+}
+
+#box6 {
+    position:absolute;
+    right:0%;
+    top:33.3333%;
+    height:33.3333%;
+    width:33.3333%;
+    border-top: 1px solid rgb(144, 144, 144);
+    border-bottom: 1px solid rgb(144, 144, 144);
+    background-color: white;
+}
+
+#box7 {
+    position:absolute;
+    top:66.6666%;
+    height:33.3333%;
+    width:33.3333%;
+    border-radius: 0 0 0 12vmin;
+    background-color: white;
+}
+
+#box8 {
+    position:absolute;
+    top:66.6666%;
+    left: 33.3333%;
+    height:33.3333%;
+    width:33.3333%;
+    border-left: 1px solid rgb(144, 144, 144);
+    border-right: 1px solid rgb(144, 144, 144);
+    background-color: white;
+}
+
+#box9 {
+    position: absolute;
+    top: 66.6666%;
+    left: 66.6666%;
+    height: 33.3333%;
+    width: 33.3333%;
+    border-radius: 0 0 12vmin 0;
+    background-color: white;
+}
+
+.O {
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 10%;
+    text-align: center;
+    font-size: 17vmin;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color:white;
+    border-radius:50%;
+    background-color: blue;
+    width: 80%;
+    height: 80%;
+    user-select: none;
+}
+
+.X {
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 10%;
+    text-align: center;
+    font-size: 17vmin;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color:white;
+    border-radius:50%;
+    background-color:red;
+    width: 80%;
+    height: 80%;
+    user-select: none;
+}
+
+#winCondition1 {
+    display: block;
+    position: absolute;
+    height: 3vmin;
+    width: 100%;
+    top: 16.6666%;
+    margin: -1.5vmin 0 0 0;
+    background-color: rgb(40,40,40);
+    border-radius:50vmin;
+}
+
+#winCondition2 {
+    display: block;
+    position: absolute;
+    height: 3vmin;
+    width: 100%;
+    top: 50%;
+    margin: -1.5vmin 0 0 0;
+    background-color: rgb(40,40,40);
+    border-radius:50vmin;
+}
+
+#winCondition3 {
+    display: block;
+    position: absolute;
+    height: 3vmin;
+    width: 100%;
+    top: 83.3333%;
+    margin: -1.5vmin 0 0 0;
+    background-color: rgb(40,40,40);
+    border-radius:50vmin;
+
+    border: 1px solid black;
+
+}
+
+#winCondition4 {
+    display: block;
+    position: absolute;
+    height: 3vmin;
+    width: 100%;
+    left: 16.6666%;
+    margin: -1.5vmin 0 0 0;
+    background-color: black;
+    border-radius:50vmin;
+    transform: rotate(90deg);
+    transform-origin: 0% 0%;
+    border: 1px solid black;
+
+}
+
+#winCondition5 {
+    display: block;
+    position: absolute;
+    height: 3vmin;
+    width: 100%;
+    margin: -1.5vmin 0 0 0;
+    background-color: black;
+    border-radius:50vmin;
+
+    border: 1px solid black;
+
+}
+
+#winCondition6 {
+    display: block;
+    position: absolute;
+    height: 3vmin;
+    width: 100%;
+    margin: -1.5vmin 0 0 0;
+    background-color: black;
+    border-radius:50vmin;
+
+    border: 1px solid black;
+
+}
+
+#winCondition7 {
+    display: block;
+    position: absolute;
+    height: 3vmin;
+    width: 100%;
+    margin: -1.5vmin 0 0 0;
+    background-color: black;
+    border-radius:50vmin;
+
+    border: 1px solid black;
+
+}
+
+#winCondition8 {
+    display: block;
+    position: absolute;
+    height: 3vmin;
+    width: 100%;
+    margin: -1.5vmin 0 0 0;
+    background-color: black;
+    border-radius:50vmin;
+
+    border: 1px solid black;
+
+}
